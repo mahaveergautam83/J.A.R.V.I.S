@@ -468,7 +468,7 @@ isInArray(good, lastmsg)==true?(smsg="Nice to hear it. 😊", k="Nice to hear it
 isInArray(death, lastmsg)==true?(smsg="Yes,I am death", k=smsg):
 isInArray(hru, lastmsg)==true?(smsg="I'm good, What about you ? ", k=smsg):
 lastmsg.substring(0, 6)=="SEARCH"?(search=lastmsg.slice(7),smsg="<b align='center'>This are the top results </b><nav class='back'  onclick='history.back()'>&larr;</nav><nav class='forword' onclick='history.forward()'>&rarr;</nav><iframe style = 'z-index:1;overflow-x:scroll; overflow-y:scroll;' scrolling='yes' height='300px' width='100%' src='https://www.bing.com/search?q="+search+"'></iframe>",k="This are the, Top results" ):
-(smsg="Sorry, I have no answer for that. If you say so I can search for you. To search, <br> type <q><b> Search Your keyword </b></q> for example type : <b>Search Sololearn</b>",k="Sorry, I have no answer for that.   If you say, so I can search for you. To search,type,Search Your keyword,for example, type, Search sololearn, ");
+(smsg="Sorry, I have no answer for that. If you say so I can search for you. To search, <br> type <q><b> Search Your keyword </b></q> for example type : <b>Search Mahaveer</b>",k="Sorry, I have no answer for that.   If you say, so I can search for you. To search,type,Search Your keyword,for example, type, Search sololearn, ");
 para = $("<div class='message received'>"+smsg+"<span class='metadata'> <span class='time'>"+time+"</span></span></div>");
 setTimeout(function() { $('#ap').append(para);$(".status").html("online");
 $(".conversation-container").scrollTop(scroll);
